@@ -4,8 +4,9 @@ def line(line)
   if line.empty?
     puts "The line is currently empty."
   else
-    puts "The line is currently: "
-    line.each { |name| puts "#{line.index(name) + 1}. #{name}" }
+    list = []
+    line.each { |name| list << "#{line.index(name) + 1}. #{name}" }
+    puts "The line is currently: #{list}"
   end
 end
 
