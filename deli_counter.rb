@@ -6,7 +6,8 @@ def line(line)
   else
     list = []
     line.each { |name| list << "#{line.index(name) + 1}. #{name}" }
-    puts "The line is currently: #{list.split(" ")}"
+    list = list.split(" ")
+    puts "The line is currently: #{list}"
   end
 end
 
