@@ -5,7 +5,7 @@ def line(line)
     puts "The line is currently empty."
   else
     puts "The line is currently: "
-    line.each { |name| print "#{line.index(name) + 1}. #{name}" }
+    line.each { |name| puts "#{line.index(name) + 1}. #{name}" }
   end
 end
 
