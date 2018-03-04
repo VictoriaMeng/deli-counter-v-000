@@ -11,5 +11,5 @@ end
 
 def take_a_number(line, name)
   line << name
-  puts "Welcome, #{name}. You are #{line.index(name) + 1}."
+  puts "Welcome, #{name}. You are number #{line.index(name) + 1} in line."
 end
